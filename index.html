@@ -38,6 +38,25 @@
       width: 75%;
       border: 1px solid gray;
     }
+
+    /* contact form design */
+
+    .custom-input {
+      background-color: black;
+      color: white;
+      border: 1px solid gray;
+    }
+
+    .custom-input::placeholder {
+      color: gray;
+    }
+
+    .custom-input:focus {
+      background-color: white;
+      color: black;
+      border-color: blue;
+      outline: none;
+    }
   </style>
 </head>
 
@@ -302,15 +321,15 @@
         <div class="card-body">
           <form action="">
             <div class="mb-3">
-              <input type="text" class="form-control" id="name" name="name" placeholder="Please type your name.."
-                required />
+              <input type="text" class="form-control custom-input" id="name" name="name"
+                placeholder="Please type your name.." required />
             </div>
             <div class="mb-3">
-              <input type="email" class="form-control" id="email" name="email" placeholder="Please type your email.."
-                required />
+              <input type="email" class="form-control custom-input" id="email" name="email"
+                placeholder="Please type your email.." required />
             </div>
             <div class="mb-3">
-              <textarea class="form-control" id="subject" name="subject" placeholder="Type Your Message..."
+              <textarea class="form-control custom-input" id="subject" name="subject" placeholder="Type Your Message..."
                 style="height: 150px" required></textarea>
             </div>
             <button type="submit" class="btn btn-primary w-100">SEND</button>
